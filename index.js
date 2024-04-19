@@ -1,9 +1,11 @@
+let vitorias = 876
+let derrotas = 775
+let resultado = calcularRanking(vitorias, derrotas)
 
 function calcularRanking(vitorias, derrotas){
-    let vitorias = 546
-    let derrotas = 435
     let saldo = vitorias - derrotas
-   
+    let nivel
+
     if(vitorias < 10){
         nivel = "Ferro"
     } else if(vitorias>= 10 && vitorias <=20){
@@ -18,12 +20,8 @@ function calcularRanking(vitorias, derrotas){
         nivel = "Lendário"
     } else {
         nivel = "Imortal"
-    }
-
+    } 
+    console.log("O Héroi tem saldo de " + saldo + " está no nivel de " + nivel)
+    return saldo
 }
-console.log("o Herói tem salde de " + saldo + " e está no nivel " + nivel)
-
-let vitorias = 549
-let derrotas = 423
-calcularRanking(vitorias, derrotas)
 
